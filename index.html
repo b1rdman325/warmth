@@ -775,7 +775,7 @@ const T = {
     todayLabel: 'today',
   },
   ru: {
-    heroTitle: 'Ты <em>не одинок</em>',
+    heroTitle: 'Вы <em>не одни</em>',
     heroSubtitle: 'Тихое место, где незнакомые люди оставляют свет друг для друга. Прочитай доброе слово или оставь своё.',
     writeTitle: 'Оставить записку',
     writeDesc: 'Напиши что-то тёплое для того, кому сейчас трудно. Твои слова важнее, чем ты думаешь.',
@@ -856,21 +856,33 @@ const CONTACTS = {
   ]
 };
 
-// ─── SAMPLE NOTES (seed data; real app would use a DB) ─────────────────────
-const SEED_NOTES = [
-  "You made it through every difficult day until now. That's not luck — that's strength you don't fully see yet.",
-  "Я не знаю, что ты переживаешь, но я знаю, что ты достаточно смел, чтобы продолжать. Это важнее, чем ты думаешь.",
-  "Сен білмейтін бір нәрсе бар: сенің өмірің — бұл маңызды. Сенің күлкің, сенің жылуың — дүниеге қажет.",
-  "On the hardest nights, remember: even the stars only appear when it gets dark enough.",
-  "Не каждый день будет тяжёлым. Позволь себе надеяться на лучшее.",
-  "Your feelings are valid. All of them. Even the complicated ones.",
-  "Сен бүгін де ояндың. Бұл — батылдық.",
-  "It's okay to not be okay. Be gentle with yourself today.",
-  "Ты — не твои самые тёмные мысли. Ты — человек, который продолжает идти вперёд.",
-  "Someday this pain will be a chapter, not your whole story.",
-  "Жылы сезімдер жіберіп тұрмын. Сен жалғыз емессің.",
-  "Маленькие шаги — это всё равно шаги вперёд. Продолжай.",
-];
+// ─── SEED NOTES (per language, shown when DB has no notes yet) ──────────────
+const SEED_NOTES = {
+  en: [
+    "You made it through every difficult day until now. That's not luck — that's strength you don't fully see yet.",
+    "On the hardest nights, remember: even the stars only appear when it gets dark enough.",
+    "Your feelings are valid. All of them. Even the complicated ones.",
+    "It's okay to not be okay. Be gentle with yourself today.",
+    "Someday this pain will be a chapter, not your whole story.",
+    "You are allowed to take up space. You are allowed to exist exactly as you are.",
+  ],
+  ru: [
+    "Я не знаю, что ты переживаешь, но знаю одно — ты справляешься. Это важнее, чем ты думаешь.",
+    "Не каждый день будет тяжёлым. Позволь себе надеяться на лучшее.",
+    "Ты — не твои самые тёмные мысли. Ты — человек, который продолжает идти вперёд.",
+    "Маленькие шаги — это всё равно шаги вперёд. Продолжай.",
+    "Ты заслуживаешь доброты — в первую очередь от самого себя.",
+    "Даже в самые тёмные дни ты не один. Мы рядом.",
+  ],
+  kz: [
+    "Сен білмейтін бір нәрсе бар: сенің өмірің маңызды. Сенің күлкің, сенің жылуың — дүниеге қажет.",
+    "Сен бүгін де ояндың. Бұл — батылдық.",
+    "Жылы сезімдер жіберіп тұрмын. Сен жалғыз емессің.",
+    "Қиын күндер өтеді. Сен күштісің, тіпті солай сезінбесең де.",
+    "Сенің сезімдерің маңызды. Барлығы да. Тіпті күрделілері де.",
+    "Өзіңе мейірімді бол. Сен оған лайықсың.",
+  ],
+};
 
 
 
@@ -920,16 +932,17 @@ async function loadAllNotes() {
   try {
     const rows = await dbFetchNotes(lang);
     const fromDb = rows.map(r => r.text);
-    // Merge with seed notes, deduplicate, then shuffle
-    const all = [...fromDb, ...SEED_NOTES];
+    // Use only seed notes matching current language
+    const seeds = SEED_NOTES[lang] || [];
+    const all = [...fromDb, ...seeds];
     for (let i = all.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [all[i], all[j]] = [all[j], all[i]];
     }
     return all;
   } catch {
-    // Fallback to seed notes if DB unreachable
-    return [...SEED_NOTES].sort(() => Math.random() - 0.5);
+    const seeds = SEED_NOTES[lang] || [];
+    return [...seeds].sort(() => Math.random() - 0.5);
   }
 }
 
