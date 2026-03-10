@@ -790,7 +790,7 @@ const T = {
     approved: '✓ Записка прошла проверку и опубликована.',
     rejected: 'Эта записка не опубликована — пожалуйста, пиши слова поддержки и доброты.',
     successTitle: 'Твоя записка ждёт',
-    successText: 'Кто-то обязательно найдёт её в тот момент, когда она будет нужна. Спасибо, что стал(а) светом.',
+    successText: 'Кто-то найдёт её, когда ему будет нужна. Спасибо, что стал светом.',
     returnHome: 'На главную',
     readPanelTitle: 'Записки для тебя',
     readPanelSubtitle: 'Их написали настоящие незнакомцы. Не торопись. Дыши.',
@@ -825,7 +825,7 @@ const T = {
     loadMore: 'Тағы оқу',
     emergency: 'Егер дәл қазір көмек керек болса',
     emergencySubtitle: 'Тірі адамдар кез келген уақытта тегін қол жетімді',
-    footer: 'Қамқорлықпен жасалды · Хаттар жариялаудан бұрын тексеріледі · Сен маңыздысың',
+    footer: 'Қамқорлықпен жасалды · Хаттар жариялаудан бұрын тексеріледі · Сені көреді',
     emptyNotes: 'Хаттар жоқ — бірінші болыңыз.',
     noteFrom: 'бейтаныстан',
     todayLabel: 'бүгін',
@@ -835,18 +835,22 @@ const T = {
 const CONTACTS = {
   en: [
     { country: 'Kazakhstan', name: 'Psychological Help', number: '150', note: '24/7, free' },
-    { country: 'Russia', name: 'Crisis Helpline', number: '124', note: 'Free, 24/7' },
+    { country: 'Kazakhstan', name: 'Crisis Hotline', number: '8-800-080-3838', note: 'Free, anonymous' },
+    { country: 'Russia', name: 'Crisis Helpline', number: '8-800-2000-122', note: 'Free, 24/7' },
     { country: 'International', name: 'Crisis Text Line', number: 'Text HOME to 741741', note: 'Text support' },
     { country: 'International', name: 'Befrienders', number: 'befrienders.org', note: 'Find local help' },
   ],
   ru: [
     { country: 'Казахстан', name: 'Психологическая помощь', number: '150', note: 'Круглосуточно, бесплатно' },
-    { country: 'Россия', name: 'Телефон доверия', number: '124', note: 'Бесплатно, 24/7' },
+    { country: 'Казахстан', name: 'Кризисная линия', number: '8-800-080-3838', note: 'Бесплатно, анонимно' },
+    { country: 'Россия', name: 'Телефон доверия', number: '8-800-2000-122', note: 'Бесплатно, 24/7' },
+    { country: 'Россия', name: 'Экстренная психология', number: '051', note: 'Москва, бесплатно' },
     { country: 'Международный', name: 'Befrienders', number: 'befrienders.org', note: 'Найти помощь рядом' },
   ],
   kz: [
     { country: 'Қазақстан', name: 'Психологиялық көмек', number: '150', note: 'Тәулік бойы, тегін' },
-    { country: 'Ресей', name: 'Сенім телефоны', number: '124', note: 'Тегін, 24/7' },
+    { country: 'Қазақстан', name: 'Дағдарыс желісі', number: '8-800-080-3838', note: 'Тегін, анонимді' },
+    { country: 'Ресей', name: 'Сенім телефоны', number: '8-800-2000-122', note: 'Тегін, 24/7' },
     { country: 'Халықаралық', name: 'Befrienders', number: 'befrienders.org', note: 'Жергілікті көмек табу' },
     { country: 'Халықаралық', name: 'Crisis Text Line', number: '741741-ге HOME жіберіңіз', note: 'Мәтіндік қолдау' },
   ]
@@ -949,6 +953,19 @@ function setLang(l) {
   event.target.classList.add('active');
   applyTranslations();
   renderContacts();
+  // If read panel is currently open, reload notes in new language
+  if (document.getElementById('readPanel').classList.contains('active')) {
+    noteIndex = 0;
+    shownNotes = [];
+    const container = document.getElementById('notesContainer');
+    container.innerHTML = `<div class="empty-state"><div class="empty-icon">🕯️</div></div>`;
+    document.getElementById('loadMoreBtn').style.display = 'none';
+    loadAllNotes().then(notes => {
+      shownNotes = notes;
+      container.innerHTML = '';
+      renderNotes();
+    });
+  }
 }
 
 function applyTranslations() {
