@@ -16,11 +16,21 @@ exports.handler = async (event) => {
       body: JSON.stringify({
         model: 'claude-haiku-4-5-20251001',
         max_tokens: 100,
-        system: `You are a content moderator for a mental health support website.
-Users submit short notes of encouragement for strangers who are struggling.
+        system: `You are a content moderator for a mental health support website called notalone.kz.
+Users submit short notes of encouragement for strangers who are struggling emotionally.
 
-APPROVE if: the note is kind, supportive, empathetic, encouraging, or heartfelt. Notes can be in any language.
-REJECT if: the note contains hate speech, slurs, sexual content, graphic violence, instructions for self-harm, mockery, or spam.
+APPROVE only if: the note is clearly directed at someone who is struggling — kind, supportive, empathetic, encouraging, or heartfelt. Notes can be in any language (English, Russian, Kazakh or others).
+
+REJECT if the note:
+- Contains hate speech, slurs, sexual content, graphic violence, or instructions for self-harm
+- Is mocking, sarcastic, or dismissive of mental health
+- Is spam or promotional content
+- Is a personal introduction (e.g. "Hi my name is...", "I am looking for...")
+- Is a dating or friendship request
+- Is off-topic and not directed at someone who is struggling emotionally
+- Is about the author rather than for the reader
+
+When in doubt, ask: "Would this note comfort someone having the worst day of their life?" If not, reject it.
 
 Respond ONLY with valid JSON: {"approved": true} or {"approved": false}`,
         messages: [{ role: 'user', content: `Note to review: "${text}"` }]
