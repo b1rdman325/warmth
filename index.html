@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Not Alone — You Are Not Alone</title>
+<title>Not Alone вЂ” You Are Not Alone</title>
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -811,12 +811,12 @@
   <div class="lang-bar">
     <button class="lang-btn active" onclick="setLang('en')">EN</button>
     <button class="lang-btn" onclick="setLang('ru')">RU</button>
-    <button class="lang-btn" onclick="setLang('kz')">ҚАЗ</button>
+    <button class="lang-btn" onclick="setLang('kz')">ТљРђР—</button>
   </div>
 
   <!-- Hero -->
   <div class="hero" id="homeSection">
-    <span class="logo-symbol">🕊️</span>
+    <span class="logo-symbol">рџ•ЉпёЏ</span>
     <h1 id="heroTitle">You are <em>not alone</em></h1>
     <p class="subtitle" id="heroSubtitle">A quiet place where strangers leave light for each other. Read a kind word, or leave one behind.</p>
 
@@ -847,14 +847,14 @@
 
   <!-- WRITE PANEL -->
   <div class="panel" id="writePanel">
-    <button class="back-btn" onclick="goHome()">← <span id="backBtn">Back</span></button>
+    <button class="back-btn" onclick="goHome()">в†ђ <span id="backBtn">Back</span></button>
 
     <div id="writeForm">
       <h2 class="panel-title" id="writePanelTitle">Leave a Note</h2>
       <p class="panel-subtitle" id="writePanelSubtitle">Write a message to a stranger who may be having the hardest day of their life. Be gentle. Be real.</p>
 
       <textarea class="note-textarea" id="noteInput" maxlength="600"
-        placeholder="You are stronger than you think. Even on the days when…"
+        placeholder="You are stronger than you think. Even on the days whenвЂ¦"
         oninput="updateCharCount()"></textarea>
       <div class="char-count"><span id="charCount">0</span>/600</div>
 
@@ -866,7 +866,7 @@
     </div>
 
     <div class="success-message" id="successMessage">
-      <div class="success-icon">🌿</div>
+      <div class="success-icon">рџЊї</div>
       <h3 id="successTitle">Your note is waiting</h3>
       <p id="successText">Someone will find it when they need it most. Thank you for being a light.</p>
       <br>
@@ -878,7 +878,7 @@
 
   <!-- READ PANEL -->
   <div class="panel" id="readPanel">
-    <button class="back-btn" onclick="goHome()">← <span id="backBtn2">Back</span></button>
+    <button class="back-btn" onclick="goHome()">в†ђ <span id="backBtn2">Back</span></button>
     <h2 class="panel-title" id="readPanelTitle">Notes left for you</h2>
     <p class="panel-subtitle" id="readPanelSubtitle">Real strangers wrote these. Take your time. Breathe.</p>
 
@@ -891,7 +891,7 @@
   <!-- EMERGENCY CONTACTS -->
   <div class="emergency-section">
     <div class="emergency-header">
-      <span class="emergency-emoji">💛</span>
+      <span class="emergency-emoji">рџ’›</span>
       <div class="emergency-title" id="emergencyTitle">If you need immediate help</div>
       <div class="emergency-subtitle" id="emergencySubtitle">Real humans are available right now, for free, any time</div>
     </div>
@@ -902,9 +902,9 @@
 <footer>
   <div class="footer-pill">
     <span class="footer-text" id="footerMade">Made with care</span>
-    <span class="footer-star">✦</span>
+    <span class="footer-star">вњ¦</span>
     <span class="footer-text" id="footerReviewed">Notes are reviewed before sharing</span>
-    <span class="footer-star pink">✦</span>
+    <span class="footer-star pink">вњ¦</span>
     <span class="footer-text" id="footerSeen">You are seen</span>
   </div>
   <button class="footer-link" onclick="openPrivacy()" id="privacyLink">Privacy & Terms</button>
@@ -913,13 +913,13 @@
     <div class="footer-divider-dot"></div>
     <div class="footer-divider-line right"></div>
   </div>
-  <p style="margin-top:12px; font-size:0.75rem; color:#6A7282; font-family:'Inter',sans-serif;">Built by Alibek · Design by Tolqynai 🌸</p>
+  <p style="margin-top:12px; font-size:0.75rem; color:#6A7282; font-family:'Inter',sans-serif;">Built by Alibek В· Design by Tolqynai рџЊё</p>
 </footer>
 
 <!-- PRIVACY MODAL -->
 <div class="modal-overlay" id="privacyModal" onclick="closePrivacyIfOutside(event)">
   <div class="modal-box">
-    <button class="modal-close" onclick="closePrivacy()">✕</button>
+    <button class="modal-close" onclick="closePrivacy()">вњ•</button>
     <div class="modal-title" id="privacyTitle">Privacy & Terms</div>
     <div class="modal-updated" id="privacyUpdated">Last updated: March 2026</div>
     <div id="privacyContent"></div>
@@ -928,7 +928,7 @@
 </div>
 
 <script>
-// ─── TRANSLATIONS ─────────────────────────────────────────────────────────────
+// в”Ђв”Ђв”Ђ TRANSLATIONS в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ
 const T = {
   en: {
     heroTitle: 'You are <em>not alone</em>',
@@ -940,11 +940,12 @@ const T = {
     back: 'Back',
     writePanelTitle: 'Leave a Note',
     writePanelSubtitle: 'Write a message to a stranger who may be having the hardest day of their life. Be gentle. Be real.',
-    placeholder: 'You are stronger than you think. Even on the days when…',
+    placeholder: 'You are stronger than you think. Even on the days whenвЂ¦',
     submitBtn: 'Send with love',
-    checking: '✦ Reviewing your note for kindness…',
-    approved: '✓ Your note passed review and has been shared.',
-    rejected: 'This note wasn\'t shared — please keep messages supportive and gentle.',
+    checking: 'вњ¦ Reviewing your note for kindnessвЂ¦',
+    approved: 'вњ“ Your note passed review and has been shared.',
+    rejected: 'This note wasn\'t shared вЂ” please keep messages supportive and gentle.',
+    error: 'Something went wrong, your note was not saved. Please try again in a moment.',
     successTitle: 'Your note is waiting',
     successText: 'Someone will find it when they need it most. Thank you for being a light.',
     returnHome: 'Return Home',
@@ -956,97 +957,99 @@ const T = {
     footerMade: 'Made with care',
     footerReviewed: 'Notes are reviewed before sharing',
     footerSeen: 'You are seen',
-    emptyNotes: 'No notes yet — be the first to leave one.',
+    emptyNotes: 'No notes yet вЂ” be the first to leave one.',
     noteFrom: 'from a stranger',
     todayLabel: 'today',
   },
   ru: {
-    heroTitle: 'Вы <em>не одни</em>',
-    heroSubtitle: 'Уголок тишины, согретый светом случайных прохожих. Прочитай доброе слово или оставь своё.',
-    writeTitle: 'Оставить записку',
-    writeDesc: 'Напиши тёплое послание для человека, которому сейчас непросто. Иногда несколько искренних слов от незнакомца могут согреть сильнее, чем кажется.',
-    readTitle: 'Прочитать записку',
-    readDesc: 'Кто-то оставил сообщение для тебя. Ты заслуживаешь почувствовать эти слова сегодня.',
-    back: 'Назад',
-    writePanelTitle: 'Оставить записку',
-    writePanelSubtitle: 'Напиши сообщение незнакомцу, у которого может быть самый трудный день в жизни. Будь нежным. Будь искренним.',
-    placeholder: 'Ты сильнее, чем думаешь. Даже в те дни, когда…',
-    submitBtn: 'Отправить с любовью',
-    checking: '✦ Проверяем твою записку…',
-    approved: '✓ Записка прошла проверку и опубликована.',
-    rejected: 'Эта записка не опубликована — пожалуйста, напиши слова поддержки.',
-    successTitle: 'Твоя записка ждёт',
-    successText: 'Кто-то найдёт её, когда она будет ему нужна. Спасибо, что стал(а) светом.',
-    returnHome: 'На главную',
-    readPanelTitle: 'Записки для тебя',
-    readPanelSubtitle: 'Их написали настоящие незнакомцы. Не торопись. Дыши.',
-    loadMore: 'Читать ещё',
-    emergency: 'Если тебе нужна помощь прямо сейчас',
-    emergencySubtitle: 'Живые люди доступны бесплатно, в любое время',
-    footerMade: 'Сделано с заботой',
-    footerReviewed: 'Записки проверяются перед публикацией',
-    footerSeen: 'Тебя видят',
-    emptyNotes: 'Записок пока нет — будь первым.',
-    noteFrom: 'от незнакомца',
-    todayLabel: 'сегодня',
+    heroTitle: 'Р’С‹ <em>РЅРµ РѕРґРЅРё</em>',
+    heroSubtitle: 'РЈРіРѕР»РѕРє С‚РёС€РёРЅС‹, СЃРѕРіСЂРµС‚С‹Р№ СЃРІРµС‚РѕРј СЃР»СѓС‡Р°Р№РЅС‹С… РїСЂРѕС…РѕР¶РёС…. РџСЂРѕС‡РёС‚Р°Р№ РґРѕР±СЂРѕРµ СЃР»РѕРІРѕ РёР»Рё РѕСЃС‚Р°РІСЊ СЃРІРѕС‘.',
+    writeTitle: 'РћСЃС‚Р°РІРёС‚СЊ Р·Р°РїРёСЃРєСѓ',
+    writeDesc: 'РќР°РїРёС€Рё С‚С‘РїР»РѕРµ РїРѕСЃР»Р°РЅРёРµ РґР»СЏ С‡РµР»РѕРІРµРєР°, РєРѕС‚РѕСЂРѕРјСѓ СЃРµР№С‡Р°СЃ РЅРµРїСЂРѕСЃС‚Рѕ. РРЅРѕРіРґР° РЅРµСЃРєРѕР»СЊРєРѕ РёСЃРєСЂРµРЅРЅРёС… СЃР»РѕРІ РѕС‚ РЅРµР·РЅР°РєРѕРјС†Р° РјРѕРіСѓС‚ СЃРѕРіСЂРµС‚СЊ СЃРёР»СЊРЅРµРµ, С‡РµРј РєР°Р¶РµС‚СЃСЏ.',
+    readTitle: 'РџСЂРѕС‡РёС‚Р°С‚СЊ Р·Р°РїРёСЃРєСѓ',
+    readDesc: 'РљС‚Рѕ-С‚Рѕ РѕСЃС‚Р°РІРёР» СЃРѕРѕР±С‰РµРЅРёРµ РґР»СЏ С‚РµР±СЏ. РўС‹ Р·Р°СЃР»СѓР¶РёРІР°РµС€СЊ РїРѕС‡СѓРІСЃС‚РІРѕРІР°С‚СЊ СЌС‚Рё СЃР»РѕРІР° СЃРµРіРѕРґРЅСЏ.',
+    back: 'РќР°Р·Р°Рґ',
+    writePanelTitle: 'РћСЃС‚Р°РІРёС‚СЊ Р·Р°РїРёСЃРєСѓ',
+    writePanelSubtitle: 'РќР°РїРёС€Рё СЃРѕРѕР±С‰РµРЅРёРµ РЅРµР·РЅР°РєРѕРјС†Сѓ, Сѓ РєРѕС‚РѕСЂРѕРіРѕ РјРѕР¶РµС‚ Р±С‹С‚СЊ СЃР°РјС‹Р№ С‚СЂСѓРґРЅС‹Р№ РґРµРЅСЊ РІ Р¶РёР·РЅРё. Р‘СѓРґСЊ РЅРµР¶РЅС‹Рј. Р‘СѓРґСЊ РёСЃРєСЂРµРЅРЅРёРј.',
+    placeholder: 'РўС‹ СЃРёР»СЊРЅРµРµ, С‡РµРј РґСѓРјР°РµС€СЊ. Р”Р°Р¶Рµ РІ С‚Рµ РґРЅРё, РєРѕРіРґР°вЂ¦',
+    submitBtn: 'РћС‚РїСЂР°РІРёС‚СЊ СЃ Р»СЋР±РѕРІСЊСЋ',
+    checking: 'вњ¦ РџСЂРѕРІРµСЂСЏРµРј С‚РІРѕСЋ Р·Р°РїРёСЃРєСѓвЂ¦',
+    approved: 'вњ“ Р—Р°РїРёСЃРєР° РїСЂРѕС€Р»Р° РїСЂРѕРІРµСЂРєСѓ Рё РѕРїСѓР±Р»РёРєРѕРІР°РЅР°.',
+    rejected: 'Р­С‚Р° Р·Р°РїРёСЃРєР° РЅРµ РѕРїСѓР±Р»РёРєРѕРІР°РЅР° вЂ” РїРѕР¶Р°Р»СѓР№СЃС‚Р°, РЅР°РїРёС€Рё СЃР»РѕРІР° РїРѕРґРґРµСЂР¶РєРё.',
+    error: 'Р§С‚Рѕ-С‚Рѕ РїРѕС€Р»Рѕ РЅРµ С‚Р°Рє, Р·Р°РїРёСЃРєР° РЅРµ СЃРѕС…СЂР°РЅРµРЅР°. РџРѕРїСЂРѕР±СѓР№ РµС‰С‘ СЂР°Р· С‡СѓС‚СЊ РїРѕР·Р¶Рµ.',
+    successTitle: 'РўРІРѕСЏ Р·Р°РїРёСЃРєР° Р¶РґС‘С‚',
+    successText: 'РљС‚Рѕ-С‚Рѕ РЅР°Р№РґС‘С‚ РµС‘, РєРѕРіРґР° РѕРЅР° Р±СѓРґРµС‚ РµРјСѓ РЅСѓР¶РЅР°. РЎРїР°СЃРёР±Рѕ, С‡С‚Рѕ СЃС‚Р°Р»(Р°) СЃРІРµС‚РѕРј.',
+    returnHome: 'РќР° РіР»Р°РІРЅСѓСЋ',
+    readPanelTitle: 'Р—Р°РїРёСЃРєРё РґР»СЏ С‚РµР±СЏ',
+    readPanelSubtitle: 'РС… РЅР°РїРёСЃР°Р»Рё РЅР°СЃС‚РѕСЏС‰РёРµ РЅРµР·РЅР°РєРѕРјС†С‹. РќРµ С‚РѕСЂРѕРїРёСЃСЊ. Р”С‹С€Рё.',
+    loadMore: 'Р§РёС‚Р°С‚СЊ РµС‰С‘',
+    emergency: 'Р•СЃР»Рё С‚РµР±Рµ РЅСѓР¶РЅР° РїРѕРјРѕС‰СЊ РїСЂСЏРјРѕ СЃРµР№С‡Р°СЃ',
+    emergencySubtitle: 'Р–РёРІС‹Рµ Р»СЋРґРё РґРѕСЃС‚СѓРїРЅС‹ Р±РµСЃРїР»Р°С‚РЅРѕ, РІ Р»СЋР±РѕРµ РІСЂРµРјСЏ',
+    footerMade: 'РЎРґРµР»Р°РЅРѕ СЃ Р·Р°Р±РѕС‚РѕР№',
+    footerReviewed: 'Р—Р°РїРёСЃРєРё РїСЂРѕРІРµСЂСЏСЋС‚СЃСЏ РїРµСЂРµРґ РїСѓР±Р»РёРєР°С†РёРµР№',
+    footerSeen: 'РўРµР±СЏ РІРёРґСЏС‚',
+    emptyNotes: 'Р—Р°РїРёСЃРѕРє РїРѕРєР° РЅРµС‚ вЂ” Р±СѓРґСЊ РїРµСЂРІС‹Рј.',
+    noteFrom: 'РѕС‚ РЅРµР·РЅР°РєРѕРјС†Р°',
+    todayLabel: 'СЃРµРіРѕРґРЅСЏ',
   },
   kz: {
-    heroTitle: '<em>Жалғыз емессің</em>',
-    heroSubtitle: 'Бейтаныс адамдар бір-біріне жарық қалдыратын тыныш орын. Жылы сөз оқы немесе өзің қалдыр.',
-    writeTitle: 'Хат қалдыру',
-    writeDesc: 'Қиын кезеңде жүрген біреуге жылы сөз қалдыр. Сенің сөздерің ойлағаннан маңыздырақ.',
-    readTitle: 'Хат оқу',
-    readDesc: 'Біреу саған хабарлама қалдырды. Сен осы сөздерді сезінуге лайықсың.',
-    back: 'Артқа',
-    writePanelTitle: 'Хат қалдыру',
-    writePanelSubtitle: 'Өмірінің ең қиын күнінде болуы мүмкін бейтанысқа хабарлама жаз. Жұмсақ бол. Шынайы бол.',
-    placeholder: 'Сен ойлағаннан күштісің. Тіпті сол күндері де…',
-    submitBtn: 'Сүйіспеншілікпен жіберу',
-    checking: '✦ Хатыңды тексеруде…',
-    approved: '✓ Хатың тексеруден өтті және жарияланды.',
-    rejected: 'Бұл хат жарияланмады — қолдау мен мейірімді сөздер жазыңыз.',
-    successTitle: 'Хатың күтіп тұр',
-    successText: 'Біреу оны қажет еткенде табады. Жарық болғаның үшін рахмет.',
-    returnHome: 'Басты бетке',
-    readPanelTitle: 'Саған арналған хаттар',
-    readPanelSubtitle: 'Оларды нақты бейтаныс адамдар жазды. Асықпа. Дем ал.',
-    loadMore: 'Тағы оқу',
-    emergency: 'Егер дәл қазір көмек керек болса',
-    emergencySubtitle: 'Тірі адамдар кез келген уақытта тегін қол жетімді',
-    footerMade: 'Қамқорлықпен жасалған',
-    footerReviewed: 'Хаттар жариялаудан бұрын тексеріледі',
-    footerSeen: 'Сен жалғыз емессің',
-    emptyNotes: 'Хаттар жоқ — бірінші болыңыз.',
-    noteFrom: 'бейтаныстан',
-    todayLabel: 'бүгін',
+    heroTitle: '<em>Р–Р°Р»Т“С‹Р· РµРјРµСЃСЃС–ТЈ</em>',
+    heroSubtitle: 'Р‘РµР№С‚Р°РЅС‹СЃ Р°РґР°РјРґР°СЂ Р±С–СЂ-Р±С–СЂС–РЅРµ Р¶Р°СЂС‹Т› Т›Р°Р»РґС‹СЂР°С‚С‹РЅ С‚С‹РЅС‹С€ РѕСЂС‹РЅ. Р–С‹Р»С‹ СЃУ©Р· РѕТ›С‹ РЅРµРјРµСЃРµ У©Р·С–ТЈ Т›Р°Р»РґС‹СЂ.',
+    writeTitle: 'РҐР°С‚ Т›Р°Р»РґС‹СЂСѓ',
+    writeDesc: 'ТљРёС‹РЅ РєРµР·РµТЈРґРµ Р¶ТЇСЂРіРµРЅ Р±С–СЂРµСѓРіРµ Р¶С‹Р»С‹ СЃУ©Р· Т›Р°Р»РґС‹СЂ. РЎРµРЅС–ТЈ СЃУ©Р·РґРµСЂС–ТЈ РѕР№Р»Р°Т“Р°РЅРЅР°РЅ РјР°ТЈС‹Р·РґС‹СЂР°Т›.',
+    readTitle: 'РҐР°С‚ РѕТ›Сѓ',
+    readDesc: 'Р‘С–СЂРµСѓ СЃР°Т“Р°РЅ С…Р°Р±Р°СЂР»Р°РјР° Т›Р°Р»РґС‹СЂРґС‹. РЎРµРЅ РѕСЃС‹ СЃУ©Р·РґРµСЂРґС– СЃРµР·С–РЅСѓРіРµ Р»Р°Р№С‹Т›СЃС‹ТЈ.',
+    back: 'РђСЂС‚Т›Р°',
+    writePanelTitle: 'РҐР°С‚ Т›Р°Р»РґС‹СЂСѓ',
+    writePanelSubtitle: 'УЁРјС–СЂС–РЅС–ТЈ РµТЈ Т›РёС‹РЅ РєТЇРЅС–РЅРґРµ Р±РѕР»СѓС‹ РјТЇРјРєС–РЅ Р±РµР№С‚Р°РЅС‹СЃТ›Р° С…Р°Р±Р°СЂР»Р°РјР° Р¶Р°Р·. Р–Т±РјСЃР°Т› Р±РѕР». РЁС‹РЅР°Р№С‹ Р±РѕР».',
+    placeholder: 'РЎРµРЅ РѕР№Р»Р°Т“Р°РЅРЅР°РЅ РєТЇС€С‚С–СЃС–ТЈ. РўС–РїС‚С– СЃРѕР» РєТЇРЅРґРµСЂС– РґРµвЂ¦',
+    submitBtn: 'РЎТЇР№С–СЃРїРµРЅС€С–Р»С–РєРїРµРЅ Р¶С–Р±РµСЂСѓ',
+    checking: 'вњ¦ РҐР°С‚С‹ТЈРґС‹ С‚РµРєСЃРµСЂСѓРґРµвЂ¦',
+    approved: 'вњ“ РҐР°С‚С‹ТЈ С‚РµРєСЃРµСЂСѓРґРµРЅ У©С‚С‚С– Р¶У™РЅРµ Р¶Р°СЂРёСЏР»Р°РЅРґС‹.',
+    rejected: 'Р‘Т±Р» С…Р°С‚ Р¶Р°СЂРёСЏР»Р°РЅРјР°РґС‹ вЂ” Т›РѕР»РґР°Сѓ РјРµРЅ РјРµР№С–СЂС–РјРґС– СЃУ©Р·РґРµСЂ Р¶Р°Р·С‹ТЈС‹Р·.',
+    error: 'Р‘С–СЂРґРµТЈРµ РґТ±СЂС‹СЃ Р±РѕР»РјР°РґС‹, С…Р°С‚ СЃР°Т›С‚Р°Р»РјР°РґС‹. РЎУ™Р»РґРµРЅ РєРµР№С–РЅ Т›Р°Р№С‚Р° РєУ©СЂС–ТЈС–Р·.',
+    successTitle: 'РҐР°С‚С‹ТЈ РєТЇС‚С–Рї С‚Т±СЂ',
+    successText: 'Р‘С–СЂРµСѓ РѕРЅС‹ Т›Р°Р¶РµС‚ РµС‚РєРµРЅРґРµ С‚Р°Р±Р°РґС‹. Р–Р°СЂС‹Т› Р±РѕР»Т“Р°РЅС‹ТЈ ТЇС€С–РЅ СЂР°С…РјРµС‚.',
+    returnHome: 'Р‘Р°СЃС‚С‹ Р±РµС‚РєРµ',
+    readPanelTitle: 'РЎР°Т“Р°РЅ Р°СЂРЅР°Р»Т“Р°РЅ С…Р°С‚С‚Р°СЂ',
+    readPanelSubtitle: 'РћР»Р°СЂРґС‹ РЅР°Т›С‚С‹ Р±РµР№С‚Р°РЅС‹СЃ Р°РґР°РјРґР°СЂ Р¶Р°Р·РґС‹. РђСЃС‹Т›РїР°. Р”РµРј Р°Р».',
+    loadMore: 'РўР°Т“С‹ РѕТ›Сѓ',
+    emergency: 'Р•РіРµСЂ РґУ™Р» Т›Р°Р·С–СЂ РєУ©РјРµРє РєРµСЂРµРє Р±РѕР»СЃР°',
+    emergencySubtitle: 'РўС–СЂС– Р°РґР°РјРґР°СЂ РєРµР· РєРµР»РіРµРЅ СѓР°Т›С‹С‚С‚Р° С‚РµРіС–РЅ Т›РѕР» Р¶РµС‚С–РјРґС–',
+    footerMade: 'ТљР°РјТ›РѕСЂР»С‹Т›РїРµРЅ Р¶Р°СЃР°Р»Т“Р°РЅ',
+    footerReviewed: 'РҐР°С‚С‚Р°СЂ Р¶Р°СЂРёСЏР»Р°СѓРґР°РЅ Р±Т±СЂС‹РЅ С‚РµРєСЃРµСЂС–Р»РµРґС–',
+    footerSeen: 'РЎРµРЅ Р¶Р°Р»Т“С‹Р· РµРјРµСЃСЃС–ТЈ',
+    emptyNotes: 'РҐР°С‚С‚Р°СЂ Р¶РѕТ› вЂ” Р±С–СЂС–РЅС€С– Р±РѕР»С‹ТЈС‹Р·.',
+    noteFrom: 'Р±РµР№С‚Р°РЅС‹СЃС‚Р°РЅ',
+    todayLabel: 'Р±ТЇРіС–РЅ',
   }
 };
 
 const CONTACTS = {
   en: [
-    { country: 'Kazakhstan', name: 'Crisis Helpline', number: '150', note: '24/7, free', color: 'purple', icon: '📞' },
-    { country: 'Russia', name: 'Crisis Helpline', number: '124', note: 'Free, 24/7', color: 'pink', icon: '📞' },
-    { country: 'International', name: 'Befrienders', number: 'befrienders.org', note: 'Find local help', color: 'blue', icon: '🌐', small: true },
-    { country: 'International', name: 'Crisis Text Line', number: 'Text HOME to 741741', note: 'Text support', color: 'green', icon: '💬', small: true },
+    { country: 'Kazakhstan', name: 'Crisis Helpline', number: '150', note: '24/7, free', color: 'purple', icon: 'рџ“ћ' },
+    { country: 'Russia', name: 'Crisis Helpline', number: '124', note: 'Free, 24/7', color: 'pink', icon: 'рџ“ћ' },
+    { country: 'International', name: 'Befrienders', number: 'befrienders.org', note: 'Find local help', color: 'blue', icon: 'рџЊђ', small: true },
+    { country: 'International', name: 'Crisis Text Line', number: 'Text HOME to 741741', note: 'Text support', color: 'green', icon: 'рџ’¬', small: true },
   ],
   ru: [
-    { country: 'Казахстан', name: 'Телефон доверия', number: '150', note: 'Круглосуточно, бесплатно', color: 'purple', icon: '📞' },
-    { country: 'Россия', name: 'Телефон доверия', number: '124', note: 'Бесплатно, 24/7', color: 'pink', icon: '📞' },
-    { country: 'Международный', name: 'Befrienders', number: 'befrienders.org', note: 'Найти помощь рядом', color: 'blue', icon: '🌐', small: true },
-    { country: 'Международный', name: 'Crisis Text Line', number: 'Текст HOME на 741741', note: 'Текстовая поддержка', color: 'green', icon: '💬', small: true },
+    { country: 'РљР°Р·Р°С…СЃС‚Р°РЅ', name: 'РўРµР»РµС„РѕРЅ РґРѕРІРµСЂРёСЏ', number: '150', note: 'РљСЂСѓРіР»РѕСЃСѓС‚РѕС‡РЅРѕ, Р±РµСЃРїР»Р°С‚РЅРѕ', color: 'purple', icon: 'рџ“ћ' },
+    { country: 'Р РѕСЃСЃРёСЏ', name: 'РўРµР»РµС„РѕРЅ РґРѕРІРµСЂРёСЏ', number: '124', note: 'Р‘РµСЃРїР»Р°С‚РЅРѕ, 24/7', color: 'pink', icon: 'рџ“ћ' },
+    { country: 'РњРµР¶РґСѓРЅР°СЂРѕРґРЅС‹Р№', name: 'Befrienders', number: 'befrienders.org', note: 'РќР°Р№С‚Рё РїРѕРјРѕС‰СЊ СЂСЏРґРѕРј', color: 'blue', icon: 'рџЊђ', small: true },
+    { country: 'РњРµР¶РґСѓРЅР°СЂРѕРґРЅС‹Р№', name: 'Crisis Text Line', number: 'РўРµРєСЃС‚ HOME РЅР° 741741', note: 'РўРµРєСЃС‚РѕРІР°СЏ РїРѕРґРґРµСЂР¶РєР°', color: 'green', icon: 'рџ’¬', small: true },
   ],
   kz: [
-    { country: 'Қазақстан', name: 'Сенім телефоны', number: '150', note: 'Тәулік бойы, тегін', color: 'purple', icon: '📞' },
-    { country: 'Ресей', name: 'Сенім телефоны', number: '124', note: 'Тегін, 24/7', color: 'pink', icon: '📞' },
-    { country: 'Халықаралық', name: 'Befrienders', number: 'befrienders.org', note: 'Жергілікті көмек табу', color: 'blue', icon: '🌐', small: true },
-    { country: 'Халықаралық', name: 'Crisis Text Line', number: '741741-ге HOME жіберіңіз', note: 'Мәтіндік қолдау', color: 'green', icon: '💬', small: true },
+    { country: 'ТљР°Р·Р°Т›СЃС‚Р°РЅ', name: 'РЎРµРЅС–Рј С‚РµР»РµС„РѕРЅС‹', number: '150', note: 'РўУ™СѓР»С–Рє Р±РѕР№С‹, С‚РµРіС–РЅ', color: 'purple', icon: 'рџ“ћ' },
+    { country: 'Р РµСЃРµР№', name: 'РЎРµРЅС–Рј С‚РµР»РµС„РѕРЅС‹', number: '124', note: 'РўРµРіС–РЅ, 24/7', color: 'pink', icon: 'рџ“ћ' },
+    { country: 'РҐР°Р»С‹Т›Р°СЂР°Р»С‹Т›', name: 'Befrienders', number: 'befrienders.org', note: 'Р–РµСЂРіС–Р»С–РєС‚С– РєУ©РјРµРє С‚Р°Р±Сѓ', color: 'blue', icon: 'рџЊђ', small: true },
+    { country: 'РҐР°Р»С‹Т›Р°СЂР°Р»С‹Т›', name: 'Crisis Text Line', number: '741741-РіРµ HOME Р¶С–Р±РµСЂС–ТЈС–Р·', note: 'РњУ™С‚С–РЅРґС–Рє Т›РѕР»РґР°Сѓ', color: 'green', icon: 'рџ’¬', small: true },
   ]
 };
 
-// ─── SEED NOTES ──────────────────────────────────────────────────────────────
+// в”Ђв”Ђв”Ђ SEED NOTES в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ
 const SEED_NOTES = {
   en: [
-    "You made it through every difficult day until now. That's not luck — that's strength you don't fully see yet.",
+    "You made it through every difficult day until now. That's not luck вЂ” that's strength you don't fully see yet.",
     "On the hardest nights, remember: even the stars only appear when it gets dark enough.",
     "Your feelings are valid. All of them. Even the complicated ones.",
     "It's okay to not be okay. Be gentle with yourself today.",
@@ -1054,57 +1057,47 @@ const SEED_NOTES = {
     "You are allowed to take up space. You are allowed to exist exactly as you are.",
   ],
   ru: [
-    "Я не знаю, что ты переживаешь, но знаю одно — ты справляешься. Это важнее, чем ты думаешь.",
-    "Не каждый день будет тяжёлым. Позволь себе надеяться на лучшее.",
-    "Ты — не твои самые тёмные мысли. Ты — человек, который продолжает идти вперёд.",
-    "Маленькие шаги — это всё равно шаги вперёд. Продолжай.",
-    "Ты заслуживаешь доброты — в первую очередь от самого себя.",
-    "Даже в самые тёмные дни ты не один. Мы рядом.",
+    "РЇ РЅРµ Р·РЅР°СЋ, С‡С‚Рѕ С‚С‹ РїРµСЂРµР¶РёРІР°РµС€СЊ, РЅРѕ Р·РЅР°СЋ РѕРґРЅРѕ вЂ” С‚С‹ СЃРїСЂР°РІР»СЏРµС€СЊСЃСЏ. Р­С‚Рѕ РІР°Р¶РЅРµРµ, С‡РµРј С‚С‹ РґСѓРјР°РµС€СЊ.",
+    "РќРµ РєР°Р¶РґС‹Р№ РґРµРЅСЊ Р±СѓРґРµС‚ С‚СЏР¶С‘Р»С‹Рј. РџРѕР·РІРѕР»СЊ СЃРµР±Рµ РЅР°РґРµСЏС‚СЊСЃСЏ РЅР° Р»СѓС‡С€РµРµ.",
+    "РўС‹ вЂ” РЅРµ С‚РІРѕРё СЃР°РјС‹Рµ С‚С‘РјРЅС‹Рµ РјС‹СЃР»Рё. РўС‹ вЂ” С‡РµР»РѕРІРµРє, РєРѕС‚РѕСЂС‹Р№ РїСЂРѕРґРѕР»Р¶Р°РµС‚ РёРґС‚Рё РІРїРµСЂС‘Рґ.",
+    "РњР°Р»РµРЅСЊРєРёРµ С€Р°РіРё вЂ” СЌС‚Рѕ РІСЃС‘ СЂР°РІРЅРѕ С€Р°РіРё РІРїРµСЂС‘Рґ. РџСЂРѕРґРѕР»Р¶Р°Р№.",
+    "РўС‹ Р·Р°СЃР»СѓР¶РёРІР°РµС€СЊ РґРѕР±СЂРѕС‚С‹ вЂ” РІ РїРµСЂРІСѓСЋ РѕС‡РµСЂРµРґСЊ РѕС‚ СЃР°РјРѕРіРѕ СЃРµР±СЏ.",
+    "Р”Р°Р¶Рµ РІ СЃР°РјС‹Рµ С‚С‘РјРЅС‹Рµ РґРЅРё С‚С‹ РЅРµ РѕРґРёРЅ. РњС‹ СЂСЏРґРѕРј.",
   ],
   kz: [
-    "Сен білмейтін бір нәрсе бар: сенің өмірің маңызды. Сенің күлкің, сенің жылуың — дүниеге қажет.",
-    "Сен бүгін де ояндың. Бұл — батылдық.",
-    "Жылы сезімдер жіберіп тұрмын. Сен жалғыз емессің.",
-    "Қиын күндер өтеді. Сен күштісің, тіпті солай сезінбесең де.",
-    "Сенің сезімдерің маңызды. Барлығы да. Тіпті күрделілері де.",
-    "Өзіңе мейірімді бол. Сен оған лайықсың.",
+    "РЎРµРЅ Р±С–Р»РјРµР№С‚С–РЅ Р±С–СЂ РЅУ™СЂСЃРµ Р±Р°СЂ: СЃРµРЅС–ТЈ У©РјС–СЂС–ТЈ РјР°ТЈС‹Р·РґС‹. РЎРµРЅС–ТЈ РєТЇР»РєС–ТЈ, СЃРµРЅС–ТЈ Р¶С‹Р»СѓС‹ТЈ вЂ” РґТЇРЅРёРµРіРµ Т›Р°Р¶РµС‚.",
+    "РЎРµРЅ Р±ТЇРіС–РЅ РґРµ РѕСЏРЅРґС‹ТЈ. Р‘Т±Р» вЂ” Р±Р°С‚С‹Р»РґС‹Т›.",
+    "Р–С‹Р»С‹ СЃРµР·С–РјРґРµСЂ Р¶С–Р±РµСЂС–Рї С‚Т±СЂРјС‹РЅ. РЎРµРЅ Р¶Р°Р»Т“С‹Р· РµРјРµСЃСЃС–ТЈ.",
+    "ТљРёС‹РЅ РєТЇРЅРґРµСЂ У©С‚РµРґС–. РЎРµРЅ РєТЇС€С‚С–СЃС–ТЈ, С‚С–РїС‚С– СЃРѕР»Р°Р№ СЃРµР·С–РЅР±РµСЃРµТЈ РґРµ.",
+    "РЎРµРЅС–ТЈ СЃРµР·С–РјРґРµСЂС–ТЈ РјР°ТЈС‹Р·РґС‹. Р‘Р°СЂР»С‹Т“С‹ РґР°. РўС–РїС‚С– РєТЇСЂРґРµР»С–Р»РµСЂС– РґРµ.",
+    "УЁР·С–ТЈРµ РјРµР№С–СЂС–РјРґС– Р±РѕР». РЎРµРЅ РѕТ“Р°РЅ Р»Р°Р№С‹Т›СЃС‹ТЈ.",
   ],
 };
 
-// ─── SUPABASE CONFIG ─────────────────────────────────────────────────────────
-const SUPABASE_URL = 'https://dzivjcrprjlrifvcoogw.supabase.co';
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR6aXZqY3JwcmpscmlmdmNvb2d3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMxMjIwOTksImV4cCI6MjA4ODY5ODA5OX0.VRcFTBWyIwbIdRiadpAa9sKrGakfgFgtSkk6Vdhd_mY';
-
-async function dbInsertNote(text, language) {
-  const res = await fetch(`${SUPABASE_URL}/rest/v1/notes`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'apikey': SUPABASE_KEY,
-      'Authorization': `Bearer ${SUPABASE_KEY}`,
-      'Prefer': 'return=minimal'
-    },
-    body: JSON.stringify({ text, language, approved: true })
-  });
-  if (!res.ok) throw new Error('Insert failed');
-}
+// в”Ђв”Ђв”Ђ API в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ
+const API_URL = 'https://api.notalone.kz';
 
 async function dbFetchNotes(language) {
-  const res = await fetch(
-    `${SUPABASE_URL}/rest/v1/notes?language=eq.${language}&approved=eq.true&order=created_at.desc&limit=100`,
-    { headers: { 'apikey': SUPABASE_KEY, 'Authorization': `Bearer ${SUPABASE_KEY}` } }
-  );
+  const res = await fetch(`${API_URL}/notes?lang=${language}`);
   if (!res.ok) throw new Error('Fetch failed');
   return await res.json();
 }
 
-// ─── STATE ────────────────────────────────────────────────────────────────────
+async function submitToApi(text, language) {
+  const res = await fetch(`${API_URL}/notes`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ text, language })
+  });
+  if (!res.ok) throw new Error('Submit failed');
+  return await res.json(); // { approved: true/false }
+}
+
+// в”Ђв”Ђв”Ђ STATE в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ
 let lang = 'en';
 let shownNotes = [];
 let noteIndex = 0;
 const NOTE_BATCH = 3;
-
-async function saveNote(text) { await dbInsertNote(text, lang); }
 
 async function loadAllNotes() {
   try {
@@ -1122,7 +1115,7 @@ async function loadAllNotes() {
   }
 }
 
-// ─── LANGUAGE ─────────────────────────────────────────────────────────────────
+// в”Ђв”Ђв”Ђ LANGUAGE в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ
 function setLang(l) {
   lang = l;
   document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
@@ -1132,7 +1125,7 @@ function setLang(l) {
   if (document.getElementById('readPanel').classList.contains('active')) {
     noteIndex = 0; shownNotes = [];
     const container = document.getElementById('notesContainer');
-    container.innerHTML = `<div class="empty-state"><div class="empty-icon">🕊️</div></div>`;
+    container.innerHTML = `<div class="empty-state"><div class="empty-icon">рџ•ЉпёЏ</div></div>`;
     document.getElementById('loadMoreBtn').style.display = 'none';
     loadAllNotes().then(notes => { shownNotes = notes; container.innerHTML = ''; renderNotes(); });
   }
@@ -1186,7 +1179,7 @@ function renderContacts() {
   `).join('');
 }
 
-// ─── NAVIGATION ───────────────────────────────────────────────────────────────
+// в”Ђв”Ђв”Ђ NAVIGATION в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ
 function showPanel(which) {
   document.getElementById('homeSection').style.display = 'none';
   if (which === 'write') {
@@ -1200,7 +1193,7 @@ function showPanel(which) {
     document.getElementById('readPanel').classList.add('active');
     noteIndex = 0; shownNotes = [];
     const container = document.getElementById('notesContainer');
-    container.innerHTML = `<div class="empty-state"><div class="empty-icon" style="animation: float 1.5s infinite">🕊️</div></div>`;
+    container.innerHTML = `<div class="empty-state"><div class="empty-icon" style="animation: float 1.5s infinite">рџ•ЉпёЏ</div></div>`;
     document.getElementById('loadMoreBtn').style.display = 'none';
     loadAllNotes().then(notes => { shownNotes = notes; container.innerHTML = ''; renderNotes(); });
   }
@@ -1212,7 +1205,7 @@ function goHome() {
   document.getElementById('readPanel').classList.remove('active');
 }
 
-// ─── WRITE ────────────────────────────────────────────────────────────────────
+// в”Ђв”Ђв”Ђ WRITE в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ
 function updateCharCount() {
   document.getElementById('charCount').textContent = document.getElementById('noteInput').value.length;
 }
@@ -1228,9 +1221,8 @@ async function submitNote() {
   status.className = 'mod-status checking';
   status.textContent = t.checking;
   try {
-    const result = await moderateNote(text);
+    const result = await submitToApi(text, lang);
     if (result.approved) {
-      try { await saveNote(text); } catch(e) { console.warn('DB save failed', e); }
       status.className = 'mod-status approved';
       status.textContent = t.approved;
       setTimeout(() => {
@@ -1244,32 +1236,19 @@ async function submitNote() {
       btn.innerHTML = `<span id="submitBtnText">${t.submitBtn}</span>`;
     }
   } catch(e) {
-    try { await saveNote(text); } catch(e2) { console.warn('DB save failed', e2); }
-    status.className = 'mod-status approved';
-    status.textContent = t.approved;
-    setTimeout(() => {
-      document.getElementById('writeForm').style.display = 'none';
-      document.getElementById('successMessage').classList.add('show');
-    }, 1000);
+    status.className = 'mod-status rejected';
+    status.textContent = t.error;
+    btn.disabled = false;
+    btn.innerHTML = `<span id="submitBtnText">${t.submitBtn}</span>`;
   }
 }
 
-async function moderateNote(text) {
-  const response = await fetch('/.netlify/functions/moderate', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ text })
-  });
-  if (!response.ok) throw new Error('Moderation error');
-  return await response.json();
-}
-
-// ─── READ ─────────────────────────────────────────────────────────────────────
+// в”Ђв”Ђв”Ђ READ в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ
 function renderNotes() {
   const container = document.getElementById('notesContainer');
   const t = T[lang];
   if (shownNotes.length === 0) {
-    container.innerHTML = `<div class="empty-state"><div class="empty-icon">🌱</div>${t.emptyNotes}</div>`;
+    container.innerHTML = `<div class="empty-state"><div class="empty-icon">рџЊ±</div>${t.emptyNotes}</div>`;
     return;
   }
   const batch = shownNotes.slice(noteIndex, noteIndex + NOTE_BATCH);
@@ -1299,48 +1278,48 @@ function escapeHtml(str) {
   return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-// ─── PRIVACY ──────────────────────────────────────────────────────────────────
+// в”Ђв”Ђв”Ђ PRIVACY в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ
 const PRIVACY = {
   en: {
     title: 'Privacy & Terms',
     updated: 'Last updated: April 2026',
     footerNote: 'This site is a community of kindness, not a medical service. If you are in crisis, please use the emergency contacts listed on the main page.',
     sections: [
-      { icon: '🔒', heading: 'No personal data collected', body: 'We do not collect your name, email, location, or any identifying information. You do not need an account to use this site. We do not use tracking cookies or advertising tools.' },
-      { icon: '✍️', heading: 'Notes are anonymous and public', body: 'Any note you submit is anonymous. Once approved, it may be read by anyone visiting the site. Do not include personal details, contact information, or anything you would not want a stranger to read.' },
-      { icon: '🤖', heading: 'AI moderation', body: 'Every submitted note is automatically reviewed by an AI system before being published. This helps us filter harmful, offensive, or dangerous content. Notes that do not pass review are quietly discarded and never shown.' },
-      { icon: '🚫', heading: 'What is not allowed', body: 'Notes containing hate speech, slurs, sexual content, graphic violence, instructions for self-harm, spam, or mockery will be rejected. We reserve the right to remove any content at our discretion.' },
-      { icon: '🧒', heading: 'Age requirement', body: 'This site is intended for users aged 13 and older. If you are under 13, please do not submit notes.' },
-      { icon: '💙', heading: 'Not a medical service', body: 'notalone.kz is a community support space. It is not a substitute for professional mental health care, therapy, or emergency services. If you are in immediate danger, please contact emergency services or the helplines listed on this page.' },
-      { icon: '📬', heading: 'Contact', body: 'If you have concerns about content on this site or need to report something, you can reach us at: ovann@yandex.kz' },
+      { icon: 'рџ”’', heading: 'No personal data collected', body: 'We do not collect your name, email, location, or any identifying information. You do not need an account to use this site. We do not use tracking cookies or advertising tools.' },
+      { icon: 'вњЌпёЏ', heading: 'Notes are anonymous and public', body: 'Any note you submit is anonymous. Once approved, it may be read by anyone visiting the site. Do not include personal details, contact information, or anything you would not want a stranger to read.' },
+      { icon: 'рџ¤–', heading: 'AI moderation', body: 'Every submitted note is automatically reviewed by an AI system before being published. This helps us filter harmful, offensive, or dangerous content. Notes that do not pass review are quietly discarded and never shown.' },
+      { icon: 'рџљ«', heading: 'What is not allowed', body: 'Notes containing hate speech, slurs, sexual content, graphic violence, instructions for self-harm, spam, or mockery will be rejected. We reserve the right to remove any content at our discretion.' },
+      { icon: 'рџ§’', heading: 'Age requirement', body: 'This site is intended for users aged 13 and older. If you are under 13, please do not submit notes.' },
+      { icon: 'рџ’™', heading: 'Not a medical service', body: 'notalone.kz is a community support space. It is not a substitute for professional mental health care, therapy, or emergency services. If you are in immediate danger, please contact emergency services or the helplines listed on this page.' },
+      { icon: 'рџ“¬', heading: 'Contact', body: 'If you have concerns about content on this site or need to report something, you can reach us at: ovann@yandex.kz' },
     ]
   },
   ru: {
-    title: 'Конфиденциальность и условия',
-    updated: 'Последнее обновление: апрель 2026',
-    footerNote: 'Этот сайт — сообщество доброты, а не медицинская служба. Если вы в кризисе, воспользуйтесь экстренными контактами на главной странице.',
+    title: 'РљРѕРЅС„РёРґРµРЅС†РёР°Р»СЊРЅРѕСЃС‚СЊ Рё СѓСЃР»РѕРІРёСЏ',
+    updated: 'РџРѕСЃР»РµРґРЅРµРµ РѕР±РЅРѕРІР»РµРЅРёРµ: Р°РїСЂРµР»СЊ 2026',
+    footerNote: 'Р­С‚РѕС‚ СЃР°Р№С‚ вЂ” СЃРѕРѕР±С‰РµСЃС‚РІРѕ РґРѕР±СЂРѕС‚С‹, Р° РЅРµ РјРµРґРёС†РёРЅСЃРєР°СЏ СЃР»СѓР¶Р±Р°. Р•СЃР»Рё РІС‹ РІ РєСЂРёР·РёСЃРµ, РІРѕСЃРїРѕР»СЊР·СѓР№С‚РµСЃСЊ СЌРєСЃС‚СЂРµРЅРЅС‹РјРё РєРѕРЅС‚Р°РєС‚Р°РјРё РЅР° РіР»Р°РІРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ.',
     sections: [
-      { icon: '🔒', heading: 'Личные данные не собираются', body: 'Мы не собираем ваше имя, email, местоположение или любую другую идентифицирующую информацию. Аккаунт не нужен. Мы не используем отслеживающие файлы cookie или рекламные инструменты.' },
-      { icon: '✍️', heading: 'Записки анонимны и публичны', body: 'Любая записка, которую вы оставляете, анонимна. После одобрения её может прочитать любой посетитель сайта. Не включайте личные данные, контактную информацию или что-либо, что вы не хотели бы показывать незнакомцам.' },
-      { icon: '🤖', heading: 'Модерация с помощью ИИ', body: 'Каждая записка автоматически проверяется системой ИИ перед публикацией. Это помогает фильтровать вредный или опасный контент. Записки, не прошедшие проверку, тихо удаляются и никому не показываются.' },
-      { icon: '🚫', heading: 'Что запрещено', body: 'Записки с ненавистническими высказываниями, оскорблениями, сексуальным контентом, жестокостью, инструкциями по причинению вреда себе, спамом или насмешками будут отклонены. Мы оставляем за собой право удалять любой контент.' },
-      { icon: '🧒', heading: 'Возрастное ограничение', body: 'Сайт предназначен для пользователей от 13 лет. Если вам нет 13 лет, пожалуйста, не оставляйте записки.' },
-      { icon: '💙', heading: 'Не медицинская служба', body: 'notalone.kz — это пространство поддержки сообщества. Это не замена профессиональной психологической помощи или экстренных служб. Если вы в опасности, обратитесь в экстренные службы или по телефонам доверия на главной странице.' },
-      { icon: '📬', heading: 'Контакт', body: 'Если у вас есть вопросы или вы хотите сообщить о контенте, напишите нам: ovann@yandex.kz' },
+      { icon: 'рџ”’', heading: 'Р›РёС‡РЅС‹Рµ РґР°РЅРЅС‹Рµ РЅРµ СЃРѕР±РёСЂР°СЋС‚СЃСЏ', body: 'РњС‹ РЅРµ СЃРѕР±РёСЂР°РµРј РІР°С€Рµ РёРјСЏ, email, РјРµСЃС‚РѕРїРѕР»РѕР¶РµРЅРёРµ РёР»Рё Р»СЋР±СѓСЋ РґСЂСѓРіСѓСЋ РёРґРµРЅС‚РёС„РёС†РёСЂСѓСЋС‰СѓСЋ РёРЅС„РѕСЂРјР°С†РёСЋ. РђРєРєР°СѓРЅС‚ РЅРµ РЅСѓР¶РµРЅ. РњС‹ РЅРµ РёСЃРїРѕР»СЊР·СѓРµРј РѕС‚СЃР»РµР¶РёРІР°СЋС‰РёРµ С„Р°Р№Р»С‹ cookie РёР»Рё СЂРµРєР»Р°РјРЅС‹Рµ РёРЅСЃС‚СЂСѓРјРµРЅС‚С‹.' },
+      { icon: 'вњЌпёЏ', heading: 'Р—Р°РїРёСЃРєРё Р°РЅРѕРЅРёРјРЅС‹ Рё РїСѓР±Р»РёС‡РЅС‹', body: 'Р›СЋР±Р°СЏ Р·Р°РїРёСЃРєР°, РєРѕС‚РѕСЂСѓСЋ РІС‹ РѕСЃС‚Р°РІР»СЏРµС‚Рµ, Р°РЅРѕРЅРёРјРЅР°. РџРѕСЃР»Рµ РѕРґРѕР±СЂРµРЅРёСЏ РµС‘ РјРѕР¶РµС‚ РїСЂРѕС‡РёС‚Р°С‚СЊ Р»СЋР±РѕР№ РїРѕСЃРµС‚РёС‚РµР»СЊ СЃР°Р№С‚Р°. РќРµ РІРєР»СЋС‡Р°Р№С‚Рµ Р»РёС‡РЅС‹Рµ РґР°РЅРЅС‹Рµ, РєРѕРЅС‚Р°РєС‚РЅСѓСЋ РёРЅС„РѕСЂРјР°С†РёСЋ РёР»Рё С‡С‚Рѕ-Р»РёР±Рѕ, С‡С‚Рѕ РІС‹ РЅРµ С…РѕС‚РµР»Рё Р±С‹ РїРѕРєР°Р·С‹РІР°С‚СЊ РЅРµР·РЅР°РєРѕРјС†Р°Рј.' },
+      { icon: 'рџ¤–', heading: 'РњРѕРґРµСЂР°С†РёСЏ СЃ РїРѕРјРѕС‰СЊСЋ РР', body: 'РљР°Р¶РґР°СЏ Р·Р°РїРёСЃРєР° Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РїСЂРѕРІРµСЂСЏРµС‚СЃСЏ СЃРёСЃС‚РµРјРѕР№ РР РїРµСЂРµРґ РїСѓР±Р»РёРєР°С†РёРµР№. Р­С‚Рѕ РїРѕРјРѕРіР°РµС‚ С„РёР»СЊС‚СЂРѕРІР°С‚СЊ РІСЂРµРґРЅС‹Р№ РёР»Рё РѕРїР°СЃРЅС‹Р№ РєРѕРЅС‚РµРЅС‚. Р—Р°РїРёСЃРєРё, РЅРµ РїСЂРѕС€РµРґС€РёРµ РїСЂРѕРІРµСЂРєСѓ, С‚РёС…Рѕ СѓРґР°Р»СЏСЋС‚СЃСЏ Рё РЅРёРєРѕРјСѓ РЅРµ РїРѕРєР°Р·С‹РІР°СЋС‚СЃСЏ.' },
+      { icon: 'рџљ«', heading: 'Р§С‚Рѕ Р·Р°РїСЂРµС‰РµРЅРѕ', body: 'Р—Р°РїРёСЃРєРё СЃ РЅРµРЅР°РІРёСЃС‚РЅРёС‡РµСЃРєРёРјРё РІС‹СЃРєР°Р·С‹РІР°РЅРёСЏРјРё, РѕСЃРєРѕСЂР±Р»РµРЅРёСЏРјРё, СЃРµРєСЃСѓР°Р»СЊРЅС‹Рј РєРѕРЅС‚РµРЅС‚РѕРј, Р¶РµСЃС‚РѕРєРѕСЃС‚СЊСЋ, РёРЅСЃС‚СЂСѓРєС†РёСЏРјРё РїРѕ РїСЂРёС‡РёРЅРµРЅРёСЋ РІСЂРµРґР° СЃРµР±Рµ, СЃРїР°РјРѕРј РёР»Рё РЅР°СЃРјРµС€РєР°РјРё Р±СѓРґСѓС‚ РѕС‚РєР»РѕРЅРµРЅС‹. РњС‹ РѕСЃС‚Р°РІР»СЏРµРј Р·Р° СЃРѕР±РѕР№ РїСЂР°РІРѕ СѓРґР°Р»СЏС‚СЊ Р»СЋР±РѕР№ РєРѕРЅС‚РµРЅС‚.' },
+      { icon: 'рџ§’', heading: 'Р’РѕР·СЂР°СЃС‚РЅРѕРµ РѕРіСЂР°РЅРёС‡РµРЅРёРµ', body: 'РЎР°Р№С‚ РїСЂРµРґРЅР°Р·РЅР°С‡РµРЅ РґР»СЏ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№ РѕС‚ 13 Р»РµС‚. Р•СЃР»Рё РІР°Рј РЅРµС‚ 13 Р»РµС‚, РїРѕР¶Р°Р»СѓР№СЃС‚Р°, РЅРµ РѕСЃС‚Р°РІР»СЏР№С‚Рµ Р·Р°РїРёСЃРєРё.' },
+      { icon: 'рџ’™', heading: 'РќРµ РјРµРґРёС†РёРЅСЃРєР°СЏ СЃР»СѓР¶Р±Р°', body: 'notalone.kz вЂ” СЌС‚Рѕ РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІРѕ РїРѕРґРґРµСЂР¶РєРё СЃРѕРѕР±С‰РµСЃС‚РІР°. Р­С‚Рѕ РЅРµ Р·Р°РјРµРЅР° РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅРѕР№ РїСЃРёС…РѕР»РѕРіРёС‡РµСЃРєРѕР№ РїРѕРјРѕС‰Рё РёР»Рё СЌРєСЃС‚СЂРµРЅРЅС‹С… СЃР»СѓР¶Р±. Р•СЃР»Рё РІС‹ РІ РѕРїР°СЃРЅРѕСЃС‚Рё, РѕР±СЂР°С‚РёС‚РµСЃСЊ РІ СЌРєСЃС‚СЂРµРЅРЅС‹Рµ СЃР»СѓР¶Р±С‹ РёР»Рё РїРѕ С‚РµР»РµС„РѕРЅР°Рј РґРѕРІРµСЂРёСЏ РЅР° РіР»Р°РІРЅРѕР№ СЃС‚СЂР°РЅРёС†Рµ.' },
+      { icon: 'рџ“¬', heading: 'РљРѕРЅС‚Р°РєС‚', body: 'Р•СЃР»Рё Сѓ РІР°СЃ РµСЃС‚СЊ РІРѕРїСЂРѕСЃС‹ РёР»Рё РІС‹ С…РѕС‚РёС‚Рµ СЃРѕРѕР±С‰РёС‚СЊ Рѕ РєРѕРЅС‚РµРЅС‚Рµ, РЅР°РїРёС€РёС‚Рµ РЅР°Рј: ovann@yandex.kz' },
     ]
   },
   kz: {
-    title: 'Құпиялылық және шарттар',
-    updated: 'Соңғы жаңарту: 2026 жылғы сәуір',
-    footerNote: 'Бұл сайт — мейірімділік қауымдастығы, медициналық қызмет емес. Егер дағдарыста болсаңыз, басты беттегі жедел байланыс нөмірлерін пайдаланыңыз.',
+    title: 'ТљТ±РїРёСЏР»С‹Р»С‹Т› Р¶У™РЅРµ С€Р°СЂС‚С‚Р°СЂ',
+    updated: 'РЎРѕТЈТ“С‹ Р¶Р°ТЈР°СЂС‚Сѓ: 2026 Р¶С‹Р»Т“С‹ СЃУ™СѓС–СЂ',
+    footerNote: 'Р‘Т±Р» СЃР°Р№С‚ вЂ” РјРµР№С–СЂС–РјРґС–Р»С–Рє Т›Р°СѓС‹РјРґР°СЃС‚С‹Т“С‹, РјРµРґРёС†РёРЅР°Р»С‹Т› Т›С‹Р·РјРµС‚ РµРјРµСЃ. Р•РіРµСЂ РґР°Т“РґР°СЂС‹СЃС‚Р° Р±РѕР»СЃР°ТЈС‹Р·, Р±Р°СЃС‚С‹ Р±РµС‚С‚РµРіС– Р¶РµРґРµР» Р±Р°Р№Р»Р°РЅС‹СЃ РЅУ©РјС–СЂР»РµСЂС–РЅ РїР°Р№РґР°Р»Р°РЅС‹ТЈС‹Р·.',
     sections: [
-      { icon: '🔒', heading: 'Жеке деректер жиналмайды', body: 'Біз сіздің атыңызды, электрондық поштаңызды, орналасқан жеріңізді немесе кез келген жеке ақпаратты жинамаймыз. Тіркелгі қажет емес. Біз бақылау cookie файлдарын немесе жарнама құралдарын пайдаланбаймыз.' },
-      { icon: '✍️', heading: 'Хаттар анонимді және жалпыға қол жетімді', body: 'Сіз қалдырған кез келген хат анонимді. Бекітілгеннен кейін оны сайтқа кіретін кез келген адам оқи алады. Жеке деректерді, байланыс ақпаратын немесе бейтанысқа көрсеткіңіз келмейтін нәрсені қоспаңыз.' },
-      { icon: '🤖', heading: 'ЖИ арқылы модерация', body: 'Жарияланбас бұрын әрбір хат жасанды интеллект жүйесі арқылы автоматты түрде тексеріледі. Бұл зиянды немесе қауіпті мазмұнды сүзуге көмектеседі. Тексеруден өтпеген хаттар ешкімге көрсетілмей жойылады.' },
-      { icon: '🚫', heading: 'Не тыйым салынған', body: 'Жек көрушілік, қорлау, жыныстық мазмұн, зорлық-зомбылық, өзіне зиян келтіру нұсқаулары, спам немесе мазақ бар хаттар қабылданбайды. Кез келген мазмұнды өз қалауымыз бойынша жою құқығын сақтаймыз.' },
-      { icon: '🧒', heading: 'Жас шегі', body: 'Сайт 13 жастан асқан пайдаланушыларға арналған. Егер сізге 13 жас толмаса, хат қалдырмаңыз.' },
-      { icon: '💙', heading: 'Медициналық қызмет емес', body: 'notalone.kz — қауымдастықтың қолдау кеңістігі. Бұл кәсіби психологиялық көмекті немесе жедел қызметтерді алмастырмайды. Егер қауіп төнсе, жедел қызметтерге немесе басты беттегі сенім телефондарына хабарласыңыз.' },
-      { icon: '📬', heading: 'Байланыс', body: 'Сұрақтарыңыз болса немесе мазмұн туралы хабарлағыңыз келсе: ovann@yandex.kz' },
+      { icon: 'рџ”’', heading: 'Р–РµРєРµ РґРµСЂРµРєС‚РµСЂ Р¶РёРЅР°Р»РјР°Р№РґС‹', body: 'Р‘С–Р· СЃС–Р·РґС–ТЈ Р°С‚С‹ТЈС‹Р·РґС‹, СЌР»РµРєС‚СЂРѕРЅРґС‹Т› РїРѕС€С‚Р°ТЈС‹Р·РґС‹, РѕСЂРЅР°Р»Р°СЃТ›Р°РЅ Р¶РµСЂС–ТЈС–Р·РґС– РЅРµРјРµСЃРµ РєРµР· РєРµР»РіРµРЅ Р¶РµРєРµ Р°Т›РїР°СЂР°С‚С‚С‹ Р¶РёРЅР°РјР°Р№РјС‹Р·. РўС–СЂРєРµР»РіС– Т›Р°Р¶РµС‚ РµРјРµСЃ. Р‘С–Р· Р±Р°Т›С‹Р»Р°Сѓ cookie С„Р°Р№Р»РґР°СЂС‹РЅ РЅРµРјРµСЃРµ Р¶Р°СЂРЅР°РјР° Т›Т±СЂР°Р»РґР°СЂС‹РЅ РїР°Р№РґР°Р»Р°РЅР±Р°Р№РјС‹Р·.' },
+      { icon: 'вњЌпёЏ', heading: 'РҐР°С‚С‚Р°СЂ Р°РЅРѕРЅРёРјРґС– Р¶У™РЅРµ Р¶Р°Р»РїС‹Т“Р° Т›РѕР» Р¶РµС‚С–РјРґС–', body: 'РЎС–Р· Т›Р°Р»РґС‹СЂТ“Р°РЅ РєРµР· РєРµР»РіРµРЅ С…Р°С‚ Р°РЅРѕРЅРёРјРґС–. Р‘РµРєС–С‚С–Р»РіРµРЅРЅРµРЅ РєРµР№С–РЅ РѕРЅС‹ СЃР°Р№С‚Т›Р° РєС–СЂРµС‚С–РЅ РєРµР· РєРµР»РіРµРЅ Р°РґР°Рј РѕТ›Рё Р°Р»Р°РґС‹. Р–РµРєРµ РґРµСЂРµРєС‚РµСЂРґС–, Р±Р°Р№Р»Р°РЅС‹СЃ Р°Т›РїР°СЂР°С‚С‹РЅ РЅРµРјРµСЃРµ Р±РµР№С‚Р°РЅС‹СЃТ›Р° РєУ©СЂСЃРµС‚РєС–ТЈС–Р· РєРµР»РјРµР№С‚С–РЅ РЅУ™СЂСЃРµРЅС– Т›РѕСЃРїР°ТЈС‹Р·.' },
+      { icon: 'рџ¤–', heading: 'Р–Р Р°СЂТ›С‹Р»С‹ РјРѕРґРµСЂР°С†РёСЏ', body: 'Р–Р°СЂРёСЏР»Р°РЅР±Р°СЃ Р±Т±СЂС‹РЅ У™СЂР±С–СЂ С…Р°С‚ Р¶Р°СЃР°РЅРґС‹ РёРЅС‚РµР»Р»РµРєС‚ Р¶ТЇР№РµСЃС– Р°СЂТ›С‹Р»С‹ Р°РІС‚РѕРјР°С‚С‚С‹ С‚ТЇСЂРґРµ С‚РµРєСЃРµСЂС–Р»РµРґС–. Р‘Т±Р» Р·РёСЏРЅРґС‹ РЅРµРјРµСЃРµ Т›Р°СѓС–РїС‚С– РјР°Р·РјТ±РЅРґС‹ СЃТЇР·СѓРіРµ РєУ©РјРµРєС‚РµСЃРµРґС–. РўРµРєСЃРµСЂСѓРґРµРЅ У©С‚РїРµРіРµРЅ С…Р°С‚С‚Р°СЂ РµС€РєС–РјРіРµ РєУ©СЂСЃРµС‚С–Р»РјРµР№ Р¶РѕР№С‹Р»Р°РґС‹.' },
+      { icon: 'рџљ«', heading: 'РќРµ С‚С‹Р№С‹Рј СЃР°Р»С‹РЅТ“Р°РЅ', body: 'Р–РµРє РєУ©СЂСѓС€С–Р»С–Рє, Т›РѕСЂР»Р°Сѓ, Р¶С‹РЅС‹СЃС‚С‹Т› РјР°Р·РјТ±РЅ, Р·РѕСЂР»С‹Т›-Р·РѕРјР±С‹Р»С‹Т›, У©Р·С–РЅРµ Р·РёСЏРЅ РєРµР»С‚С–СЂСѓ РЅТ±СЃТ›Р°СѓР»Р°СЂС‹, СЃРїР°Рј РЅРµРјРµСЃРµ РјР°Р·Р°Т› Р±Р°СЂ С…Р°С‚С‚Р°СЂ Т›Р°Р±С‹Р»РґР°РЅР±Р°Р№РґС‹. РљРµР· РєРµР»РіРµРЅ РјР°Р·РјТ±РЅРґС‹ У©Р· Т›Р°Р»Р°СѓС‹РјС‹Р· Р±РѕР№С‹РЅС€Р° Р¶РѕСЋ Т›Т±Т›С‹Т“С‹РЅ СЃР°Т›С‚Р°Р№РјС‹Р·.' },
+      { icon: 'рџ§’', heading: 'Р–Р°СЃ С€РµРіС–', body: 'РЎР°Р№С‚ 13 Р¶Р°СЃС‚Р°РЅ Р°СЃТ›Р°РЅ РїР°Р№РґР°Р»Р°РЅСѓС€С‹Р»Р°СЂТ“Р° Р°СЂРЅР°Р»Т“Р°РЅ. Р•РіРµСЂ СЃС–Р·РіРµ 13 Р¶Р°СЃ С‚РѕР»РјР°СЃР°, С…Р°С‚ Т›Р°Р»РґС‹СЂРјР°ТЈС‹Р·.' },
+      { icon: 'рџ’™', heading: 'РњРµРґРёС†РёРЅР°Р»С‹Т› Т›С‹Р·РјРµС‚ РµРјРµСЃ', body: 'notalone.kz вЂ” Т›Р°СѓС‹РјРґР°СЃС‚С‹Т›С‚С‹ТЈ Т›РѕР»РґР°Сѓ РєРµТЈС–СЃС‚С–РіС–. Р‘Т±Р» РєУ™СЃС–Р±Рё РїСЃРёС…РѕР»РѕРіРёСЏР»С‹Т› РєУ©РјРµРєС‚С– РЅРµРјРµСЃРµ Р¶РµРґРµР» Т›С‹Р·РјРµС‚С‚РµСЂРґС– Р°Р»РјР°СЃС‚С‹СЂРјР°Р№РґС‹. Р•РіРµСЂ Т›Р°СѓС–Рї С‚У©РЅСЃРµ, Р¶РµРґРµР» Т›С‹Р·РјРµС‚С‚РµСЂРіРµ РЅРµРјРµСЃРµ Р±Р°СЃС‚С‹ Р±РµС‚С‚РµРіС– СЃРµРЅС–Рј С‚РµР»РµС„РѕРЅРґР°СЂС‹РЅР° С…Р°Р±Р°СЂР»Р°СЃС‹ТЈС‹Р·.' },
+      { icon: 'рџ“¬', heading: 'Р‘Р°Р№Р»Р°РЅС‹СЃ', body: 'РЎТ±СЂР°Т›С‚Р°СЂС‹ТЈС‹Р· Р±РѕР»СЃР° РЅРµРјРµСЃРµ РјР°Р·РјТ±РЅ С‚СѓСЂР°Р»С‹ С…Р°Р±Р°СЂР»Р°Т“С‹ТЈС‹Р· РєРµР»СЃРµ: ovann@yandex.kz' },
     ]
   }
 };
@@ -1376,7 +1355,7 @@ function renderPrivacy() {
 
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closePrivacy(); });
 
-// ─── INIT ─────────────────────────────────────────────────────────────────────
+// в”Ђв”Ђв”Ђ INIT в”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђв”Ђ
 function detectLanguage() {
   const preferred = navigator.languages || [navigator.language || 'en'];
   for (const l of preferred) {
@@ -1392,7 +1371,7 @@ lang = detectLanguage();
 
 document.querySelectorAll('.lang-btn').forEach(b => {
   b.classList.toggle('active', b.textContent.trim().toLowerCase() === lang ||
-    (b.textContent.trim() === 'ҚАЗ' && lang === 'kz'));
+    (b.textContent.trim() === 'ТљРђР—' && lang === 'kz'));
 });
 
 renderContacts();
